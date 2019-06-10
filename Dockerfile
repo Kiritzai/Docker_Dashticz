@@ -6,7 +6,7 @@ RUN apk update && \
 	apk add --no-cache nginx git && \
 	mkdir -p /var/www && \
 	cd /var/www && \
-	git clone https://github.com/Dashticz/dashticz_v2.git --depth=1 dashticz
+	git clone https://github.com/Dashticz/dashticz_v2.git
 	
 ADD default.conf /etc/nginx/conf.d/
 
